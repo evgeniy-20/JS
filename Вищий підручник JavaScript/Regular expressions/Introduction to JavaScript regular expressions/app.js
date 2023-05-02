@@ -5,3 +5,6 @@ let str = 'ahb acb aeb aeeb adcb axeb';
 let newStr = 'ahb'.replace(/a/g, '!');
 
 console.log(newStr);
+
+let str1 = 'a.x abx azx';
+let res = str1.replace(/a\.x/g, '!');
