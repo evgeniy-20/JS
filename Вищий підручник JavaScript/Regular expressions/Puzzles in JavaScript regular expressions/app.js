@@ -9,3 +9,10 @@ console.log(yearRegex.test(year1));
 console.log(yearRegex.test(year2)); 
 console.log(yearRegex.test(year3));
 
+// 
+
+let str = 'ahb acb aeb aeeb adcb axeb';
+
+str.replace(/a.b/g, '.');
+
+console.log(str);
