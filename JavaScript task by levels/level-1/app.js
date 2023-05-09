@@ -194,18 +194,132 @@ for (let i = str1.length - 1; i >= 0; i--) {
   console.log(str1[i]);
 }
 
+//Даний масив із числами. Знайдіть суму квадратів елементів цього масиву.
 
+let nums = [2, 4, 6, 8, 10];
 
-
-
-
-
-
-
-
-const str2 = "Hello, world!";
-
-for (let i = str2.length - 1; i >= 0; i--) {
-  console.log(str2[i]);
+let sumSquares = 0;
+for (let i = 0; i < nums.length; i++) {
+  sumSquares += Math.pow(nums[i], 2);
 }
+console.log(sumSquares);
+//Даний масив із числами. Знайдіть суму квадратного коріння елементів цього масиву.
+
+let sumSqrt = 0;
+for (let i = 0; i < nums.length; i++) {
+  sumSqrt += Math.sqrt(nums[i]);
+}
+console.log(sumSqrt); 
+
+//Даний масив із числами. Знайдіть суму позитивних елементів цього масиву.
+
+let sumPositives = 0;
+for (let i = 0; i < nums.length; i++) {
+  if (nums[i] > 0) {
+    sumPositives += nums[i];
+  }
+}
+console.log(sumPositives);
+
+//Даний масив із числами. Знайдіть суму тих елементів цього масиву, які більші за нуль і менше десяти. 
+
+let sumBetween0And10 = 0;
+for (let i = 0; i < nums.length; i++) {
+  if (nums[i] > 0 && nums[i] < 10) {
+    sumBetween0And10 += nums[i];
+  }
+}
+console.log(sumBetween0And10);
+
+//Дано рядок: 'abcde' Отримайте масив літер цього рядка.
+
+let str3 = 'abcde';
+
+let arr = str3.split('');
+console.log(arr);
+
+//Дано деяке число: 12345 Отримайте масив цифр цього числа.
+
+let num6 = 12345;
+
+let arr1 = num6.toString().split('').map(Number);
+
+console.log(arr1);
+
+//Дано деяке число: 12345 Переверніть його: 54321
+
+let num7 = 12345;
+
+let reversedNum = Number(num7.toString().split('').reverse().join(''));
+console.log(reversedNum);
+
+//Дано деяке число: 12345 Знайдіть суму цифр цього числа.
+
+let num8 = 12345;
+
+let digits = num8.toString().split('');
+let sum4 = 0;
+for (let i = 0; i < digits.length; i++) {
+  sum4 += Number(digits[i]);
+}
+console.log(sum4);
+
+//Заповніть масив цілими числами від 1до 10.
+
+let arr2 = [];
+
+for(let i = 1; i <= 10; i++) {
+  arr2.push(i);
+}
+console.log(arr2)
+
+//Заповніть масив парними числами з проміжку 1до 100.
+
+let arr3 = [];
+
+for(let i = 1; i <= 100; i++) {
+  arr3.push(i);
+}
+console.log(arr3)
+
+//Даний масив із дробами: [1.456, 2.125, 3.32, 4.1, 5.34] Округліть ці дроби до одного знака в дрібній частині.
+
+let arr4 = [1.456, 2.125, 3.32, 4.1, 5.34];
+let roundedArr = [];
+for (let i = 0; i < arr4.length; i++) {
+  roundedArr.push(Number(arr4[i].toFixed(1)));
+}
+console.log(roundedArr);
+
+//Дано масив з рядками. Залишіть у цьому масиві тільки ті рядки, які починаються на http://.
+
+const strings = ['http://google.com', 'https://facebook.com', 'http://wikipedia.org', 'ftp://example.com'];
+
+const httpStrings = strings.filter(str => str.startsWith('http://'));
+
+console.log(httpStrings);
+
+//Дано масив з рядками. Залишіть у цьому масиві лише ті рядки, які закінчуються на .html.
+
+const strings1 = ['index.html', 'main.css', 'script.js', 'about.html'];
+
+const htmlStrings = strings1.filter(str => str.endsWith('.html'));
+
+console.log(htmlStrings);
+
+//Даний масив із числами. Збільшіть кожну кількість з масиву на 10 відсотків. 
+
+const numbers = [1, 2, 3, 4, 5];
+
+const Numbers = numbers.map(num => num * 1.1);
+
+console.log(Numbers);
+
+
+
+
+
+
+
+
 
