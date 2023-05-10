@@ -315,11 +315,35 @@ const Numbers = numbers.map(num => num * 1.1);
 
 console.log(Numbers);
 
+//Заповніть масив випадковими числами із проміжку від 1 до 100.
 
+let arr5 = [];
 
+for(let i = 1; i <= 10; i++) {
+  arr5.push(Math.floor(Math.random() * 100) + 1);
+}
+console.log(arr5);
 
+//Дано деяке число: 12345 Виведіть у консоль усі його символи з кінця.
 
+let num9 = "12345";
+let numArray = num9.split("");
+let reversedNumArray = numArray.reverse();
+let reversedNum1 = reversedNumArray.join("");
+console.log(reversedNum1);
 
+//Даний деякий масив, наприклад, ось такий: [1, 2, 3, 4, 5, 6] По черзі виведіть у консоль підмасиви із двох елементів нашого масиву: [1, 2] [3, 4] [5, 6]
 
+let arr6 = [1, 2, 3, 4, 5, 6];
 
+for (let i = 0; i < arr6.length; i += 2) {
+  let subArr = arr6.slice(i, i + 2);
+  console.log(subArr);
+}
 
+//Дано два масиви: let arr1 = [1, 2, 3]; let arr2 = [4, 5, 6]; Злийте ці масиви в новий масив: [1, 2, 3, 4, 5, 6]
+
+let arr7 = [1, 2, 3];
+let arr8 = [4, 5, 6];
+let newArr = arr7.concat(arr8);
+console.log(newArr);
