@@ -5,15 +5,84 @@ console.log(arr);
 
 //Створіть масив із рядками. Виведіть його на екран за допомогою функції alertта виведіть його в консоль за допомогою console.log.
 
-let arrStr = ['Yevhen', 'Stas', 'Yuri'];
+let arrStr = ['Yevhen', 'Stas', 'Yura'];
 
 console.log(arrStr);
 
+//Створіть масив із елементами 1, 2, 3. Виведіть на екран кожен із цих елементів.
+
+let array = [1,2,3];
+console.log(array[0]);
+console.log(array[1]);
+console.log(array[2]);
+
+//Даний наступний масив:let arr = ['a', 'b', 'c', 'd']; Виведіть за допомогою цього масиву наступний рядок: 'a+b+c+d'
+
+let arr1 = ['a', 'b', 'c', 'd'];
+
+let result = arr1[0] + '+' + arr1[1] + '+' + arr1[2] + '+' + arr1[3];
+console.log(result);
+
+//Створіть масив із довільними елементами. Виведіть на екран кількість елементів у цьому масиві.
+
+let arr2 = ['Yevhen', 'Yura', 'Stas'];
+console.log(arr2.length);
+
+//Створіть масив із довільними елементами. Виведіть останній елемент цього масиву на екран.
+
+let lastArray = ['Yevhen', 'Yura', 'Stas'];
+
+console.log(lastArray[lastArray.length - 1]);
+
+//Створіть масив із числами. Додайте до кожного елемента масиву число 3. Виведіть змінений масив на екран.
+
+let numbers = [1,2,3];
+numbers[0] += 3;
+numbers[1] += 3;
+numbers[2] += 3;
+console.log(numbers);
+
+//Створіть масив з 1елементами 2 і 3. За допомогою оператора ++ збільште кожний елемент масиву на одиницю.
+
+let arr3 = [1, 2, 3, 4];
+
+arr3[0]++;
+++arr3[1];
+arr3[2]--;
+--arr3[3];
+
+console.log(arr3);
+
+//За допомогою описаного прийому створіть масив з елементами 1 та 2.3
+
+let arr4 = [];
+arr4[0] = 1;
+arr4[1] = 2;
+arr4[2] = 3;
+console.log(arr4);
+
+//Нехай дано такий масив: let arr = [1, 2, 3]; Додайте йому в кінець елементи 4та 5.
+
+let arr5 = [1, 2, 3];
+arr5[3] = 4;
+arr5[4] = 5;
+console.log(arr5);
+
+let arr6 = [];
+
+arr6[3] = 'a';
+arr6[8] = 'b';
+
+console.log(arr6.length);
+
+//Заповніть масив числами 1, 2та 3.
+
+let arr7 = [];
+
+arr7.push(1);
+arr7.push(2);
+arr7.push(3);
+
+console.log(arr7);
+
 //
-
-let brrredd  = 1233;
-
-console.log(_name);
-
-let bbb = `Женя  
-ДУрак`
