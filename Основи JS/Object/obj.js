@@ -95,6 +95,25 @@ let obj5 = {
 	[key4]: 3
 };
 
+let obj6 = {d: 4, b: 5}
+
+let arr = Object.keys(obj6);
+console.log('b' in obj6);
+
+
+
+const obj7 = {
+    f: 7
+} 
+if('f' in obj7) {
+    console.log('Ключ знайдено');
+} else {
+    console.log('Ключ не знайдено');
+}
+
+let arr1 = [1, 2, 3]
+console.log(typeof arr1)
+
 
 
 
