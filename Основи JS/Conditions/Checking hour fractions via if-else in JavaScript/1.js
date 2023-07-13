@@ -3,13 +3,13 @@
 let min = 10;
 
 if (min >= 0 && min <= 19) {
-	console.log('1 четверть');
+	console.log('1 тритина');
 }
 
 if (min >= 20 && min <= 39) {
-	console.log('2 четверть');
+	console.log('2 тритина');
 }
 
 if (min >= 40 && min <= 60) {
-	console.log('3 четверть');
+	console.log('3 тритина');
 }
