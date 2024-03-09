@@ -3,8 +3,10 @@
 let num = 1;
 
 function func() {
-    num = 2;
+    num++;
 }
-func();
 
+func();
+func();
+func();
 console.log(num);
