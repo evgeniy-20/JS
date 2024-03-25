@@ -45,3 +45,8 @@ let double = function (number) {
 console.log(double(3));
 
 // Функція для оброблення випадкового слова
+let randomWords = ['Planet', 'Worm', 'Flower', 'Computer'];
+let pickRandomWord = function (words) {
+    return words[Math.floor(Math.random() * randomWords.length)];
+}
+console.log(pickRandomWord(randomWords));
