@@ -50,3 +50,15 @@ let pickRandomWord = function (words) {
     return words[Math.floor(Math.random() * randomWords.length)];
 }
 console.log(pickRandomWord(randomWords));
+
+// Рахуємо з функцією
+
+function add(num1, num2) {
+    return num1 + num2;
+}
+
+function multiplay(num1, num2) {
+    return num1 * num2;
+}
+
+console.log(multiplay(36325, 9824) + 777);
