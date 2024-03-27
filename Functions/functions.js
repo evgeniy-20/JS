@@ -86,3 +86,71 @@ console.log(areArraysSame([1, 2, 3], [1, 2, 3])); // true
 console.log(areArraysSame([1, 2, 3], [1, 2, 3, 4])); // false
 
 // Створюємо гру шибениця, використовуючи функції
+
+// Функція для вибору випадкового слова
+function pickWord() {
+    var words = ["javascript", "programming", "computer", "science", "algorithm"];
+    return words[Math.floor(Math.random() * words.length)];
+}
+
+// Функція для налаштування масиву відповідей
+function setupAnswerArray(word) {
+    var answerArray = [];
+    for (var i = 0; i < word.length; i++) {
+        answerArray[i] = "_";
+    }
+    return answerArray;
+}
+
+// Функція для показу гравцю прогресу
+function showPlayerProgress(answerArray) {
+    alert("Current state of the word: " + answerArray.join(" "));
+}
+
+// Функція для отримання варіанту відповіді від гравця
+function getGuess() {
+    return prompt("Enter a single letter or click Cancel to stop playing:").toLowerCase();
+}
+
+// Функція для оновлення гри після варіанту відповіді від гравця
+function updateGameState(guess, word, answerArray) {
+    var correctGuesses = 0;
+    for (var j = 0; j < word.length; j++) {
+        if (word[j] === guess && answerArray[j] === "_") {
+            answerArray[j] = guess;
+            correctGuesses++;
+        }
+    }
+    return correctGuesses;
+}
+
+// Функція для показу відповіді та привітання гравця
+function showAnswerAndCongratulatePlayer(answerArray) {
+    alert("Good job! The word was " + answerArray.join("") + ".");
+}
+
+// Основна функція гри
+function hangman() {
+    var word = pickWord();
+    var answerArray = setupAnswerArray(word);
+    var remainingLetters = word.length;
+
+    while (remainingLetters > 0) {
+        showPlayerProgress(answerArray);
+        var guess = getGuess();
+
+        if (guess === null) {
+            break;
+        } else if (guess.length !== 1) {
+            alert("Please enter a single letter.");
+        } else {
+            var correctGuesses = updateGameState(guess, word, answerArray);
+            remainingLetters -= correctGuesses;
+        }
+    }
+
+    showAnswerAndCongratulatePlayer(answerArray);
+}
+
+// Запускаємо гру
+hangman();
