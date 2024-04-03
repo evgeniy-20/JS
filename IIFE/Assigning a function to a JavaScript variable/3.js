@@ -1,5 +1,7 @@
 // Визначте, не запускаючи код, який виведеться в консоль:
 
-// !function () {
-//     console.log('!');
-// } ();
+let result = function () {
+    return '!';
+};
+
+console.log(result());
