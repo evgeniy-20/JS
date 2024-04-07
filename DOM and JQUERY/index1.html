@@ -11,8 +11,21 @@
     <script>
         let title = document.getElementById('title');
         let button = document.getElementById('button');
+        let intervalId;
         button.addEventListener('click', function () {
-            title.innerHTML = 'Женя - МОЛОДЕЦЬ!!!';
+            if (!intervalId) {
+            intervalId = setInterval(function () {
+                title.innerHTML = 'Женя - МОЛОДЕЦЬ!!!';
+                let newText = document.createElement('p');
+                newText.textContent = title.innerHTML;
+                document.body.appendChild(newText);
+            }, 1000);
+            button.value = "Стоп";
+            } else {
+                clearInterval(intervalId);
+                button.value = "Зробити добре";
+                intervalId = null;
+            }
         })
     </script>
 </body>
