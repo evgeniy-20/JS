@@ -1,17 +1,16 @@
-let headingElement = document.getElementById('main-heading');
-let newHeadingText = prompt('Please provide a new heading:');
-// Змінюємо текст заголовка використовуючи JQUERY
-$('#main-heading').text(newHeadingText);
+let title = document.getElementById('title');
+let button = document.getElementById('button');
+let stop = document.getElementById('stop');
+let message = document.getElementById('message');
+let intervalId;
 
-// Створюємо нові елементи за допомогою JQUERY
+button.addEventListener('click', function () {
 
-for (let i = 0; i < 3; i++) {
-    let hobby = prompt('Tell me one of your hobbies!');
-    $('body').append('<p>' + hobby + '<p>');
-}
+    intervalId = setInterval(function () {
+        message.innerHTML += 'Женя-МОЛОДЕЦЬ!!!';
+    }, 1000);
+});
 
-// Анімуємо елементи за допомогою JQUERY
-
-$('h1').fadeOut(3000).fadeIn(2000);
-
-// Складаємо список друзів за допомогою JQUERY
+stop.addEventListener('click', function () {
+    clearInterval(intervalId);
+})

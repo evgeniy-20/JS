@@ -17,9 +17,19 @@ clearTimeout(timeoutId);
 
 // Викликаємо код декілька разв за допомогою setinerval
 
-let counter = 1;
+let counter = 5;
 
 let printMessege = function () {
     console.log('You have been staring at your console for ' + counter + ' seconds');
     counter++;
 }
+
+printMessege();
+
+// Анімуємо елементи за допомогою setInterval
+// Рефгуємо на дії користувачів
+
+let clickHandler = function (event) {
+    console.log('Click! ' + event.pageX + ' ' + event.pageY);
+};
+$('h1').click(clickHandler)
