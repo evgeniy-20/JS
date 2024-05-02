@@ -15,17 +15,17 @@ let getDistance = function (event, target) {
 // Отримаємо рядок, що покаже відстань
 
 let getDistanceHint = function (distance) {
-    if (distance < 10) {
+    if (distance < 50) {
         return 'Boiling hot!';
-    } else if (distance < 20) {
+    } else if (distance < 60) {
         return 'Really hot';
-    } else if (distance < 40) {
-        return 'Hot';
     } else if (distance < 80) {
-        return 'Warm';
+        return 'Hot';
     } else if (distance < 160) {
-        return 'Cold';
+        return 'Warm';
     } else if (distance < 320) {
+        return 'Cold';
+    } else if (distance < 640) {
         return 'Really cold';
     } else {
         return 'Freezing!';
@@ -48,7 +48,7 @@ let target = {
 // Додаємо мініпулятор кліків до елемента img
 
 $("#map").click(function (event) {
-    clicks++;
+    clicks;
 
     // Отримаємо відстань між event і trget
 
@@ -64,7 +64,7 @@ $("#map").click(function (event) {
 
     // Якщо клік було зроблено достатньо близько, кажемо гравцеві , що він переміг
 
-    if (distance < 8) {
+    if (distance < 48) {
         alert('Find the treasure in ' + clicks + ' clocks!');
     }
 });
