@@ -21,3 +21,25 @@ let secondsInMinute = 60;
 let minuteInAnHour = 60;
 let secondsInAnHour = secondsInMinute * minuteInAnHour;
 console.log(secondsInAnHour);
+
+// секунд у дні
+
+let hoursInADay = 24;
+let secondsInADay = secondsInAnHour * hoursInADay;
+
+console.log(secondsInADay);
+
+// Секунд у році
+
+let daysInAYear = 365;
+let secondsInYear = secondsInADay * daysInAYear;
+
+console.log(secondsInYear);
+
+// Вік в секундах
+
+let age1 = 26;
+
+let result1 = age1 * secondsInYear;
+
+console.log(result1);
