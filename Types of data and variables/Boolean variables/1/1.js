@@ -22,3 +22,21 @@ console.log(needToShowerToday);
 let shouldGoToSchool = !isWeekend && hadShower && (hasApple || hasOrange);
 
 console.log(shouldGoToSchool);
+
+// Порівнюємо числові із булевими значеннями
+
+// більше ніж
+
+let height = 60;
+let heightRestriction = 60;
+console.log(height >= heightRestriction);
+
+// менше ніж
+
+let height1 = 60;
+let heightRestriction1 = 60;
+console.log(height1 < heightRestriction1);
+
+let age = 12;
+let accompanied = 13;
+console.log(age <= 13);
