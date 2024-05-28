@@ -107,3 +107,76 @@ console.log(landmarks);
 // Використовуємо метод math.random
 console.log(Math.random());
 console.log(Math.random() * 10);
+
+// Заокруглюємо до меншого за допомогою методу math.floor
+
+console.log(Math.floor(Math.random() * 4));
+
+let randomWords = ['Exsplosion', 'Cave', 'Proncess', 'Pen'];
+let randomIndex = Math.floor(Math.random() * 4);
+console.log(randomWords[randomIndex]);
+
+// Фахівець із прийняття рішень: повна версія
+
+let phrases = [
+    'That sounds good',
+    'Yes, you should definitely do that',
+    'I`m not sure that`s a greate idea',
+    'Maybe not today?',
+    'Computer says no.'
+]
+
+// Мені слід випити ще один мілк-шейк?
+
+console.log(phrases[Math.floor(Math.random() * 5)]);
+
+// Чи варто мені робити домашнє завдання?
+
+console.log(phrases[Math.floor(Math.random() * 5)]);
+
+// Створюємо генератор випадкових образливих фраз
+
+let randomBodyParts = ['Fase', 'Noise', 'Hair'];
+let randomAbjectives = ['Smelly', 'Boring', 'Stupid'];
+let randomWords1 = ['Fly', 'Mormot', 'Stick', 'Monkey', 'Rat'];
+
+//  Обираємо випадкову частину тіла із масиву randomBodyParts
+
+let randomBodyPart = randomBodyParts[Math.floor(Math.random() * randomBodyParts.length)];
+
+//  Обираємо випаковий прикметник із масиву randomAbjectives
+
+let randomAbjective = randomAbjectives[Math.floor(Math.random() * randomAbjectives.length)];
+
+//  Обираємо випадкове слово із масиву randomWords1
+
+let randomWord1 = randomWords1[Math.floor(Math.random() * randomWords1.length)];
+
+// З'єднуємо усі випадкові рядки у речення
+
+let randomInsult = "Your " + randomBodyPart + ' is like a ' + randomAbjective + ' ' + randomWord1 + '!!!';
+
+console.log(randomInsult);
+
+// Згенеруйте випадкове ціле число від 1 до 10 та виведіть його в консоль.
+
+let number = Math.floor(Math.random() * 10) + 1;
+
+console.log(number);
+
+// Знайдіть випадкове дробове число від 0 до 1 та виведіть його в консоль.
+
+console.log(Math.random());
+
+// Створіть масив з 5 випадкових цілих чисел від 10 до 20 та виведіть його в консоль.
+
+let arr = [];
+
+for (let i = 0; i <= 5; i++) {
+    arr.push(Math.floor(Math.random() * 11) + 10);
+}
+console.log(arr);
+
+// Виберіть випадковий елемент з масиву ['cat', 'dog', 'mouse', 'bird', 'fish'] та виведіть його в консоль.
+
+let animals1 = ['cat', 'dog', 'mouse', 'bird', 'fish'];
