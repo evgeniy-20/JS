@@ -180,3 +180,5 @@ console.log(arr);
 // Виберіть випадковий елемент з масиву ['cat', 'dog', 'mouse', 'bird', 'fish'] та виведіть його в консоль.
 
 let animals1 = ['cat', 'dog', 'mouse', 'bird', 'fish'];
+
+console.log(Math.floor(Math.random() * animals1.length));
