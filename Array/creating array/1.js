@@ -182,3 +182,38 @@ console.log(arr);
 let animals1 = ['cat', 'dog', 'mouse', 'bird', 'fish'];
 
 console.log(Math.floor(Math.random() * animals1.length));
+
+// Знайти суму всіх елементів масиву:
+
+const numbers = [1, 2, 3, 4, 5];
+let sum = 0;
+for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+}
+console.log(sum);
+
+// Знайти найбільший елемент масиву:
+
+const numbers1 = [10, 20, 30, 5, 15];
+
+console.log(Math.max(...numbers1));
+
+// Знайти найменший елемент масиву:
+
+const numbers2 = [10, 20, 30, 5, 15];
+
+console.log(Math.min(...numbers1));
+
+// Знайти середнє значення елементів масиву:
+
+const numbers3 = [1, 2, 3, 4, 5];
+
+// Створення масиву: Створи масив з числами від 1 до 10.
+
+let arr1 = [];
+
+for (let i = 1; i <= 10; i++) {
+    arr1.push(i);
+};
+
+console.log(arr1);
