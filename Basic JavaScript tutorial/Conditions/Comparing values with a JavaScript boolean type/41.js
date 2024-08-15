@@ -2,7 +2,7 @@
 
 let test = 1;
 
-if (test == true) {
+if (test == false) {
     console.log('+++');
 } else {
     console.log('---');

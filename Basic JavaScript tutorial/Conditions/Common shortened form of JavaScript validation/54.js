@@ -1,8 +1,8 @@
 // Не запускаючи код, визначте, що виведеться в консоль:
 
-let test = 1;
+let test = null;
 
-if (test == true) {
+if (test) {
     console.log('+++');
 } else {
     console.log('---');
