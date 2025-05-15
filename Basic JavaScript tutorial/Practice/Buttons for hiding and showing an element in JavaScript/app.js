@@ -3,9 +3,5 @@
 let button = document.querySelector('.button');
 let element = document.querySelector('.elem');
 button.addEventListener('click', function () {
-    if (element.classList.contains('hide')) {
-        element.classList.remove('hide');
-    } else {
-        element.classList.add('hide');
-    }
+    element.classList.toggle('hidden');
 })
