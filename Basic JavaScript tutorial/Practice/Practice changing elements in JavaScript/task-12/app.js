@@ -2,6 +2,8 @@
 
 let counter = document.querySelector('.counter');
 let button = document.querySelector('.button');
+let count = 0;
 button.addEventListener('click', function () {
-    counter.innerHTML =
+    count++;
+    counter.textContent = `Ви натиснули ${count} разів`
 })
