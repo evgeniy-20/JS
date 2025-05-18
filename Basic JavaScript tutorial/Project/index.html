@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="elem"></div>
+
+    <form id="addForm">
+        <input type="text" id="name" placeholder="Ім’я" required>
+        <input type="number" id="age" placeholder="Вік" required>
+        <input type="number" id="salary" placeholder="Зарплата" required>
+        <button type="submit">Додати працівника</button>
+    </form>
+
+    <hr>
+
+    <label for="filterSalary">Фільтр: зарплата більше</label>
+    <input type="number" id="filterSalary">
+
+    <label for="sort">Сортування</label>
+    <select id="sort">
+        <option value="">Без сортування</option>
+        <option value="name-asc">Ім’я ↑</option>
+        <option value="name-desc">Ім’я ↓</option>
+        <option value="age-asc">Вік ↑</option>
+        <option value="age-desc">Вік ↓</option>
+        <option value="salary-asc">Зарплата ↑</option>
+        <option value="salary-desc">Зарплата ↓</option>
+    </select>
+    <script src="./app.js"></script>
+</body>
+</html>
