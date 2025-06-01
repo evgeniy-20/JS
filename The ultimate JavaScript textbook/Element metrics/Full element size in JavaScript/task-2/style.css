@@ -1,0 +1,186 @@
+body {
+    background-color: #12d192;
+}
+
+h1,
+h2,
+p {
+    color: #fff;
+}
+
+h1 {
+    font-size: 35px;
+    margin: 20px auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-size: 35px;
+    margin: 20px auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 35px;
+    margin: 20px auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    background-color: #12d192;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: #123bd1;
+}
+
+.love {
+    color: #ff69b4;
+    font-size: 32px;
+    text-align: center;
+}
+
+#main-title {
+    color: #000;
+    text-shadow: 1px 1px 2px white;
+}
+
+.box {
+    background-color: white;
+    color: #123bd1;
+    padding: 20px;
+    margin: 30px auto;
+    border: 2px solid #123bd1;
+    width: 300px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.flex-example {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.items {
+    background-color: #fff;
+    color: #123bd1;
+    padding: 20px;
+    border: 2px solid #123bd1;
+    width: 60px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 250px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    color: #123bd1;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 18px;
+    color: #666;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #123bd1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background-color: #0f2ca1;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 колонки */
+    gap: 20px;
+    /* відступ між блоками */
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+@media (max-width: 600px) {
+    .grid-cards {
+        grid-template-columns: 1fr;
+        /* Одна колонка на мобільних */
+    }
+}
+
+.form-section {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    text-align: center;
+    color: #123bd1;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #123bd1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0f2ca1;
+}

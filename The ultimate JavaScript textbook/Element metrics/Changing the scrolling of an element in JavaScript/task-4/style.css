@@ -1,0 +1,21 @@
+.elem {
+    width: 400px;
+    height: 250px;
+    overflow: scroll;
+    border: 20px solid #01a3a4;
+    background-color: #fff;
+    text-align: justify;
+    margin: 50px auto;
+    padding: 25px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #01a3a4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 150px;
+}

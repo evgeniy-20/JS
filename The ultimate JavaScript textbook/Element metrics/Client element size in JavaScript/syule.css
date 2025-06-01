@@ -1,0 +1,8 @@
+.elem {
+    width: 300px;
+    height: 200px;
+    background-color: #44a031;
+    border: 20px solid #4025ac;
+    margin: 50px auto;
+    padding: 25px;
+}

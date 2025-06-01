@@ -1,0 +1,12 @@
+.elem {
+    width: 300px;
+    height: 150px;
+    border: 10px solid #000;
+    padding: 20px;
+    margin: 50px auto;
+}
+
+.button {
+    background-color: blueviolet;
+    border-radius: 40px;
+}
