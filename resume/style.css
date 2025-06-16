@@ -1,0 +1,130 @@
+/* === Variables === */
+/* === Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+.resume {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar {
+  width: 30%;
+  background-color: #1a1a1a;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile {
+  text-align: center;
+}
+.profile h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.profile h2 {
+  font-size: 16px;
+  color: #00bcd4;
+}
+
+.contact h3,
+.languages h3,
+.hobbies h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #00bcd4;
+}
+.contact ul,
+.languages ul,
+.hobbies ul {
+  list-style: none;
+}
+.contact ul li,
+.languages ul li,
+.hobbies ul li {
+  margin-bottom: 8px;
+}
+.contact ul li i,
+.languages ul li i,
+.hobbies ul li i {
+  margin-right: 8px;
+  color: #00bcd4;
+}
+.contact p,
+.languages p,
+.hobbies p {
+  font-size: 14px;
+}
+
+.main-content {
+  width: 70%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.main-content section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #00bcd4;
+}
+.main-content section ul.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.main-content section ul.skills li {
+  background: #2a2a2a;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.main-content section ul li {
+  margin-bottom: 8px;
+}
+.main-content section a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+.main-content section a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .resume {
+    flex-direction: column;
+  }
+  .sidebar,
+  .main-content {
+    width: 100%;
+  }
+  .main-content {
+    padding: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
